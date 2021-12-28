@@ -90,6 +90,10 @@ PG_PASSWORD=turing-dev
 PG_PORT=5432
 PORT=3006
 ```
+before start creates cards
+to create the cards table call the following post request 
+http://localhost:port/api/v1/deck-api/createcards
+
 
 to get the postman collections kindly import it from the following link thanks
 https://www.getpostman.com/collections/604663ccb4f2fc93025e
