@@ -1,0 +1,36 @@
+# Group deck API
+
+## item [/card{?deckId,count}]
+
+### Draw cards by deckId and count [GET]
+
++ Parameters
+    + deckId (required, uuid, `9186d216-8985-439c-aaba-42fe25900cf2`),
+    + count (required, number, `5`)
+    
++ Response 200 (application/json)
+    + Attributes (deckData)
+
+## item [/opendeck{?deckId}]
+
+### Draw cards by deckId and count [GET]
+
++ Parameters
+    + deckId (required, uuid, `9186d216-8985-439c-aaba-42fe25900cf2`)
+    
++ Response 200 (application/json)
+    + Attributes (deckData)
+# Data Structures
+
+## card
++ deckId: `bf3875ea-c262-49f7-a92f-dbc9790b59e1` (string) (required),
++ remaining: 44 (number) (required),
++ type: `FULL` (string) ,
++ shuffled: true (boolean) (required),
++ cards: array[card]
+
+## deckData        
++ deckdata: array[cardArray] (required)
+
+## cardArray        
++ cardArray: array[card] (required)
