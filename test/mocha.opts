@@ -1,0 +1,4 @@
+--exit 
+-r ts-node/register 
+-r dotenv/config 
+./test/**/*.test.ts
