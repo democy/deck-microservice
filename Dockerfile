@@ -59,7 +59,6 @@ ENV NODE_ENV 'production'
 ENV PORT 80
 ENV BASE_URI '/api/v1/scamadviser-api'
 ENV ENV ${ENV}
-ENV scamadviser_URL ${ScamAdviser_URL}
 ENV ES_URL ${ES_URL}
 ENV PG_DATABASE ${PG_DATABASE}
 ENV PG_HOST ${PG_HOST}
